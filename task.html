@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task | Raza Saleem | JS Projects </title>
+        <!-- Custom CSS Link -->
+        <link rel="stylesheet" href="taskStyle.css">
+        <!-- BS5 CSS Link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- FontAwesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+
+<!-- Left sideBar -->
+<div class="row main_taskRow">
+    <div class="col-sm-3 sideBar">
+        
+        <div class="textIcon" style="background-color: black; color: white;">
+            <!-- <i class="fas fa-regular fa-list-check fa-fade"></i> -->
+            <a href="#" class="link text-white">
+                <img src="./assets/image/task-active.png" class="img-fluid me-3" alt="">
+                <h1 class="fs-6">Task</h1>
+            </a>
+        </div>
+    
+        <div class="textIcon mt-3">
+            <a href="location.html" class="link">
+                <img src="./assets/image/location-incative.png" class="img-fluid me-3" alt="">
+                <h1 class="fs-6">Location</h1>
+            </a>
+        </div>
+
+        <div class="textIcon">
+            <a href="index.html" class="link">
+                <img src="./assets/image/logout.png" class="img-fluid me-3" alt="">
+                <h1 class="fs-6">Logout</h1>
+            </a>
+        </div>
+    </div>
+
+    <!-- RightSide Bar Task Side -->
+    <div class="col-sm-9 d-flex align-items-start">
+        <div class="row rightBar">
+            <h2 class="addTask mb-4 p-0" id="add-new-task">
+                <a href="#" class="text-decoration-none m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add new task</a>
+            </h2>
+            <!-- Modal Task -->
+            <div class="modal fade check-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog d-flex justify-content-center align-items-center">
+                <div class="modal-content modal-box mt-5">
+                    <div class="modal-body py-4 modalBody" id="taskForm">
+                    <h1>New Task</h1>
+                    <div class="row mt-5 mx-5 modal-row">
+            
+                        <div class="col-sm-12 modal-col ps-4 pb-3 mb-3">
+                            <img src="./assets/image/summary.png" alt="" class="img-fluid">
+                            <input type="text" class="input py-2" placeholder="Summary" title="Write Task Summary in Short" id="summary" autocomplete="off">
+                        </div>
+            
+                        <div class="col-sm-12 modal-col pt-2 ps-4 pb-3 mb-2 d-flex">
+                            <div class="col-sm-1">
+                                <img src="./assets/image/description.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-sm-11">
+                                <textarea class="form-control" placeholder="Description" id="floatingTextarea2" title="Write Task Description" id="description" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-12 modal-col ps-4 pb-3">
+                            <img src="./assets/image/dueDate.png" alt="" class="img-fluid">
+                            <input type="text" class="input py-2" placeholder="Due Date" title="Write: Tomorrow, 17:00" id="dueDate" autocomplete="off">
+                        </div>
+                        
+                        <div class="col-sm-12 mt-5 d-flex justify-content-center align-items-center">
+                            <button type="submit" class="btn btn-primary" id="modalSubmit" data-bs-dismiss="modal">Save</button>
+                        </div>
+                        <div class="col-sm-12 mt-3 d-flex justify-content-center align-items-center">
+                            <button type="button" class="btn bg-white text-dark p-0" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            <!-- Modal Task End -->
+
+            <!-- InCompleted Task -->
+            <h2 class="inComplete">Incomplete</h2>
+            <div class="col-sm-12">
+                <ul class="list-group" id="incompleteTasks">
+                    <!-- <li class="list-group-item p-0 mb-2">
+                        <div class="col-sm-12 d-flex align-items-center h-20">
+                            <input type="checkbox" name="" class="form-check-input me-3 mb-1 checkboxInput unCheckBox">
+                            <span class="taskName">Submit my resume</span>
+                        </div>
+                        <div class="col-sm-12 ml-2">
+                            <span class="day">Today,</span>
+                            <span class="time">17:00</span>
+                        </div>
+                    </li>    -->
+                </ul>
+            </div>
+
+            <!-- Completed Task -->
+            <h2 class="complete mt-3">Completed</h2>
+            <div class="col-sm-12 mt-2">
+                <ul class="list-group" id="completedTasks">
+                    <!-- <li class="list-group-item p-0 mb-3">
+                        <div class="col-sm-12 d-flex align-items-center h-20">
+                            <input type="checkbox" name="" class="form-check-input me-3 mb-1 checkboxInput checkBox" checked>
+                            <span class="taskName">Respond to Jane email</span>
+                        </div>
+                    </li>  -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Reminder Section  -->
+        <div class="row lastBar" id="reminder">
+            <div class="col-sm-12 d-flex justify-content-end">
+                <div class="row reminder-row">
+                    <div class="col-sm-9 ms-2 pb-0">
+                        <h4>Submit my resume</h4>
+                        <h5 class="pb-1">Send my resume to DigitalTolk</h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="./assets/image/reminder.png" alt="remind">
+                    </div>
+                    <div class="col-sm-12 d-flex justify-content-end align-items-center p-0 reminder-section">
+                        <p class="pe-3 mb-0" onclick="removeReminder()">Skip</p>
+                        <p class="remind-later mb-0 pe-4" onclick="removeReminder()">Remind me later</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+        <script src="task.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+       
+</body>
+</html>

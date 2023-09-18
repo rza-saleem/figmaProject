@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sideBar{
+    width: 100%;
+    height: 100vh;
+    /* background: silver; */
+}
+.sideBar .textIcon{
+    width: 250px;
+    height: 55px;
+    margin-top: 35px;
+    border-radius: 0px 100px 100px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 42px;
+    transition: all 0.7s ease-in-out;
+}
+.sideBar .textIcon .link{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+
+}
+.sideBar .textIcon:last-child{
+    margin-top: 120%;
+}
+/* .sideBar .textIcon:hover, .sideBar .textIcon:focus{
+    color: white;
+    background: black;
+} */
+.sideBar .textIcon i{
+    background: transparent;
+    width: 40px;
+    height: 22.91px;
+    gap: 20px
+}
+.sideBar .textIcon h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.18px;
+    padding-top: 7px;
+    /* padding-left: 10px; */
+}
+
+
+.rightBar{
+    width: 342px;
+    /* height: 621px; */
+    padding-top: 4%;
+}
+.rightBar h2 a,
+.rightBar h2 {
+    color: #575767;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    height: 18px;
+}
+.rightBar ul{
+    border: none;
+}
+.rightBar ul li{
+    border: none;
+    background: transparent;
+}
+
+.rightBar ul li .uncheckBox{
+    background: #FBFBFB;
+}
+.rightBar ul li .checkBox{
+    /* background: #FBFBFB; */
+    border: 1px solid #DADADA;
+    background: black;
+    /* background: #FBFBFB; */
+}
+/* .rightBar ul li input[type="checkbox"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightBar ul li input[type="checkbox"]:after{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 10px;
+    color: black;
+} */
+.rightBar ul li .ml-2{
+    margin-left: 13%;
+    margin-top: -2%;
+}
+.rightBar ul li .day, .rightBar ul li .time{
+    font-size: 14px;
+    font-weight: 600;
+    color: #B9B9BE;
+}
+.main_taskRow .lastBar{
+    width: 100%;
+
+}
+.lastBar .reminder-row{
+    width: 350px;
+    height: 122px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-right: 3%;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px 0px #0000001A;
+}
+.lastBar .reminder-row h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0px;
+}
+.lastBar .reminder-row h5{
+    font-size: 16px;
+    font-weight: 400;
+    color: #575757;
+    line-height: 19.36px;
+}
+.lastBar .reminder-row img{
+    margin-left: -10px;
+}
+.lastBar .reminder-row p{
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+    color: black;
+    cursor: pointer;
+}
+.lastBar .reminder-row .reminder-section{
+    background: #F6F5F5;
+}
+.lastBar .reminder-row .remind-later{
+    font-weight: 400;
+}
+
+/* Modal CSS Styling */
+/* .check-modal .modal-box{
+    width: 765px;
+} */
+/* .check-modal .modal-box .modalBody{
+    width: 765px;
+    height: 501px;
+} */
+.check-modal h1{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 4%;
+}
+.check-modal .modal-row .modal-col{
+    border-bottom: 1px solid #BDBDBD;
+}
+.check-modal .modal-row .input{
+    border: none;
+    width: 85%;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+}
+.check-modal .modal-row input:focus,
+.check-modal .modal-row textarea:focus{
+    border: none;
+    outline: none;
+}
+.check-modal .modal-row input::placeholder, 
+.check-modal .modal-row textarea::placeholder{
+    color: #BDBDBD;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 6px;
+}
+.check-modal .modal-row textarea::placeholder{
+    padding-left: 6px;
+}
+.check-modal .modal-row textarea{
+    width: 100%;
+    height: 80px;
+    border: none;
+    padding: 0px;
+    background: transparent;
+    /* margin-left: -4%; */
+}
+.check-modal .modal-row button{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 345.85px;
+    background: black;
+    border-radius: 200px;
+    padding: 16px 32px 16px 32px;
+    text-align: center;
+}

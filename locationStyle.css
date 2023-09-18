@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.sideBar{
+    width: 100%;
+    height: 100vh;
+    /* background: silver; */
+}
+.sideBar .textIcon{
+    color: black;
+    width: 250px;
+    height: 55px;
+    margin-top: 35px;
+    background: transparent;
+    border-radius: 0px 100px 100px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 42px;
+    transition: all 0.7s ease-in-out;
+}
+.sideBar .textIcon .link{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-decoration: none;
+
+}
+.sideBar .textIcon:last-child{
+    margin-top: 120%;
+}
+/* .sideBar .textIcon:hover, .sideBar .textIcon:focus{
+    color: white;
+    background: black;
+} */
+.sideBar .textIcon h1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.18px;
+    padding-top: 7px;
+    /* padding-left: 10px; */
+}
+
+.rightBar{
+    width: 342px;
+    /* height: 621px; */
+    padding-top: 5%;
+}
+.rightBar h2{
+    height: 18px;
+    color: #575767;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    /* font-family: Inter; */
+}
+.rightBar ul{
+    border: none;
+}
+.rightBar ul li{
+    border: none;
+    background: transparent;
+}
+
+.rightBar ul li .uncheckBox{
+    background: #FBFBFB;
+}
+.rightBar ul li .checkBox{
+    /* background: #FBFBFB; */
+    border: 1px solid #DADADA;
+    background: black;
+}
+.rightBar ul li .location-name{
+    color: #575767;
+    font-size: 17px;
+    font-weight: 500;
+}
+.rightBar ul li .ml-2{
+    margin-left: 10.50%;
+    margin-top: -2%;
+}
+.rightBar ul li .day, .rightBar ul li .time{
+    font-size: 14px;
+    font-weight: 600;
+    color: #B9B9BE;
+}
+
+
+
+
+
+
